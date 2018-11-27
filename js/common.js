@@ -1,5 +1,44 @@
-$(function() {
+$(function () {
+  var sheet = document.createElement('style'),
+    $rangeInput = $('.range input'),
+    prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
 
-	// Custom JS
+  document.body.appendChild(sheet);
 
+  var getTrackStyle = function (el) {
+    var curVal = el.value,
+      val = (curVal - 1) * 16.666666667,
+      style = '';
+
+    // Set active label
+    $('.range-labels li').removeClass('active selected');
+
+    var curLabel = $('.range-labels').find('li:nth-child(' + curVal + ')');
+
+    curLabel.addClass('active selected');
+    curLabel.prevAll().addClass('selected');
+  }
+
+  $rangeInput.on('input', function () {
+    sheet.textContent = getTrackStyle(this);
+  });
+
+  // Change input value on label click
+  $('.range-labels li').on('click', function () {
+    var index = $(this).index();
+
+    $rangeInput.val(index + 1).trigger('input');
+  });
+  // Функционал
+
+  var owl = $(".owl-carousel"),
+    // rangeArr = [],
+    inputType = $("input[type=range]");
+
+  owl.owlCarousel({
+    items: 1,
+    loop: true,
+    URLhashListener: true,
+    startPosition: 'URLHash'
+  });
 });
