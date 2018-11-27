@@ -1,0 +1,160 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "slider"
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+.h2
+  font-weight: 300
+  font-size: 48px
+  color: #efce18
+  text-align: center
+
+b, strong
+	font-weight: bold
+
+.main-header
+  min-height: 100vh
+  padding: 
+    top: 20px
+    bottom: 55px
+  background-image: url(../img/bg.jpg)
+  background-size: cover
+  background-position: center center
+  display: flex
+  flex-wrap: wrap
+  &__description
+    width: 100%
+    margin-top: auto
+    text-align: center
+    color: #6e4c36
+    font-size: 22px
+
+
+.nav-link
+  font-family: "Open Sans", sans-serif
+  font-size: 16px
+  color: $accent
+
+.nutritional-info
+  min-height: 100vh
+  padding-top: 52px
+  &__description
+    margin-bottom: 40px
+    color: #5d636d
+    font-weight: 300
+    text-align: center
+    font-size: 25px
+  &__list-item
+    position: relative
+    padding-left: 85px
+    font-size: 17.6px
+    margin-top: 50px
+    &:nth-child(1)
+      margin-top: 0
+      &::before
+        position: absolute
+        top: 8px
+        left: 15px 
+        width: 41px
+        height: 42px
+        content: ""
+        background: url(../img/feature-1.svg)
+    &:nth-child(2)::before
+      position: absolute
+      top: 8px
+      left: 15px 
+      width: 41px
+      height: 42px
+      content: ""
+      background: url(../img/feature-2.svg)
+    &:nth-child(3)::before
+      position: absolute
+      top: 8px
+      left: 15px 
+      width: 41px
+      height: 42px
+      content: ""
+      background: url(../img/feature-3.svg)
+    &:nth-child(4)::before
+      position: absolute
+      top: 8px
+      left: 15px 
+      width: 41px
+      height: 42px
+      content: ""
+      background: url(../img/feature-4.svg)
+
+.history
+  padding-bottom: 85px
+
+
+.recepts 
+  padding-top: 45px
+  padding-bottom: 150px
+  background-color: #f2f2f2
+  &__card
+    margin-top: 20px
+    color: #5d636d
+    font-size: 12px
+    line-height: 19px
+    li
+      padding-left: 15px
+  .card-title
+    font-size: 18px
+    font-size: 23px
+    color: #6e4c36
+  .card-text
+    font-size: 12px
+    color: #b4b4b4
+
+.main-footer
+  height: 100vh
+  background-color: #e9d000
+  &__slogan
+    color: #c28100
+    font-weight: 300
+    font-size: 45.6px
+  &__btn
+    margin-top: 15px
+    background-color: transparent
+    border: 1px solid #c28100
+    border-radius: 70px
+    color: #c28100
+    font-size: 19.6px
+
+
+@import "media" // Always at the end
