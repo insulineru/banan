@@ -37,7 +37,8 @@ $(function () {
 
   owl.owlCarousel({
     items: 1,
-    loop: true,
+    loop: false,
+    mouseDrag: false,
     URLhashListener: true,
     startPosition: 'URLHash'
   });

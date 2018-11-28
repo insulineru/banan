@@ -29,10 +29,9 @@
 </head>
 
 <body>
-
   <header class="main-header">
-    <div class="container">
-      <div class="row">
+    <div class="container-fluid main-header__background">
+      <div class="row align-items-start">
         <div class="col-12">
           <nav class="navbar navbar-expand-lg static-top">
             <a class="navbar-brand" href="#">
@@ -45,43 +44,45 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item header-navigation__menu-item">
-                  <a class="nav-link" href="#">Пищевая ценность</a>
+                  <a class="nav-link" href="#nutritional-info">Пищевая ценность</a>
                 </li>
                 <li class="nav-item header-navigation__menu-item">
                   <a class="nav-link" href="#">Сорта</a>
                 </li>
                 <li class="nav-item header-navigation__menu-item">
-                  <a class="nav-link" href="#">История</a>
+                  <a class="nav-link" href="#history">История</a>
                 </li>
                 <li class="nav-item header-navigation__menu-item">
-                  <a class="nav-link" href="#">Рецепты</a>
+                  <a class="nav-link" href="#recepts">Рецепты</a>
                 </li>
                 <li class="nav-item header-navigation__menu-item">
                   <a class="nav-link" href="#">Как выбрать</a>
                 </li>
                 <li class="nav-item header-navigation__menu-item">
-                  <a class="nav-link" href="#">Купить</a>
+                  <a class="nav-link" href="#main-footer">Купить</a>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
+        <div class="col-12">
+          <p class="main-header__description text-center">
+            Банан - плод травянистого одноименного растения, <br> которое произрастает в тропическом климате, одно из
+            <br> самых древних культивируемых растений.
+          </p>
+        </div>
       </div>
 
-
+      <div class="row">
+        
+      </div>
     </div>
-    </div>
-
-    <p class="main-header__description text-center">
-      Банан - плод травянистого одноименного растения, <br> которое произрастает в тропическом климате,
-      одно из <br> самых древних культивируемых растений.
-    </p>
-
   </header>
+
 
   <main>
 
-    <section class="nutritional-info">
+    <section class="nutritional-info" id="nutritional-info">
 
       <div class="container">
 
@@ -127,7 +128,7 @@
 
     </section>
 
-    <section class="history">
+    <section class="history d-none d-md-block" id="history">
 
       <div class="container">
 
@@ -302,7 +303,7 @@
 
     </section>
 
-    <section class="recepts">
+    <section class="recepts" id="recepts">
 
       <div class="container">
 
@@ -411,7 +412,7 @@
             <div class="card recepts__card">
               <img class="card-img-top" src="./img/recept-6.png" alt="Изображение блюда">
               <div class="card-body">
-                <h5 class="card-title">Бананы по-ирландски</h5>
+                <h5 class="card-title">Бананы по-айсиксвански</h5>
                 <p class="card-text">5 мин, 335 ккал</p>
               </div>
               <ul class="list-unstyled">
@@ -444,7 +445,7 @@
 
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer" id="main-footer">
 
     <div class="container h-100">
 
