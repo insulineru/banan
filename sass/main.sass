@@ -38,10 +38,16 @@ body
 	text-align: center
 
 .h2
+  margin-top: 60px
   font-weight: 300
   font-size: 48px
   color: #efce18
   text-align: center
+
+.h3
+  font-weight: 300
+  font-size: 27px
+  color: #6e4c36
 
 b, strong
 	font-weight: bold
@@ -60,7 +66,7 @@ b, strong
     color: #6e4c36
     font-size: 22px
   &__background
-    background-image: url("../img/banan.png")
+    background-image: url("../img/bg.jpg")
     background-repeat: no-repeat
     background-size: 100%
     background-position: 50% 50%
@@ -74,9 +80,7 @@ b, strong
   color: $accent
 
 .nutritional-info
-  background-color: #111111
   min-height: 100vh
-  padding-top: 52px
   &__description
     margin-bottom: 40px
     color: #5d636d
@@ -123,9 +127,63 @@ b, strong
       content: ""
       background: url(../img/feature-4.svg)
 
+
+.sorts
+  min-height: 100vh
+  background-image: url(../img/bg-2.jpg)
+  background-size: cover
+  &__description
+    margin-bottom: 40px
+    color: $light
+    font-weight: 300
+    text-align: center
+    font-size: 25px
+  &-link
+    padding: 0px 20px
+    font-size: 15px
+    line-height: 43px
+    color: #b4b4b4
+    margin-bottom: 10px
+    border-radius: 40px
+    &.active
+      border: 1px solid #efce18
+      color: #efce18
+    &:hover
+      border: 1px solid #b4b4b4
+      color: #b4b4b4
+      text-decoration: none
+
+  &__property
+    color: #979797
+    margin-bottom: 20px
+    padding: 0
+    &-span
+      display: block
+      font-size: 15.39px
+      font-weight: 600
+      color: #5d636d
+      line-height: 19px
+    &-text
+      margin-bottom: 31px
+    &-info
+      height: 370px
+      overflow-y: scroll
+      margin-bottom: 35px
+
+  .article
+    background-color: #ffffff
+    border-radius: 10px
+    height: 490px
+    padding: 35px 0px
+    font-size: 17px
+    line-height: 23px
+    font-weight: 300
+
 .history
+  min-height: 100vh
   padding-bottom: 85px
   background-color: #111111
+  color: #ffffff
 
 
 .recepts 
